@@ -1,4 +1,5 @@
-import {checkSchema} from 'express-validator'
+import {checkSchema, param} from 'express-validator'
+
 
 export const createProductSchema = checkSchema({
     name: {
@@ -64,5 +65,7 @@ export const createProductSchema = checkSchema({
         }
     }
 })
+
+export  const getProductSchema = [param('id').exists().isNumeric().escape()]
 
 
