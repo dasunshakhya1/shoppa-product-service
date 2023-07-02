@@ -1,5 +1,5 @@
 
 
-import app from './configs/express.js'
+import app from './src/configs/express.js'
 
 app.listen(3000)
